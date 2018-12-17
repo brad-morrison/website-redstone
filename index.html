@@ -5,6 +5,10 @@
     <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Open+Sans" rel="stylesheet"> 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+        
         body {
             margin: 0;
             width: 100%;
@@ -19,6 +23,7 @@
         
         .top-block {
             max-width: 1800px;
+            width: 100%;
             margin: auto;
             overflow: hidden;
             position: relative;
@@ -46,16 +51,18 @@
         }
         
         .header {
-            width: 90%;
+            width: 100%;
+            padding-left: 25px;
+            padding-right: 25px;
             display: flex;
             justify-content: center;
-            margin: auto;
             margin-top: 30px;
+            
         }
         
         .header-icon {
             position: relative;
-            width: 20px;
+            width: 35px;
             filter: invert(100%);
             transition: 0.8s ease;
             padding: 5px;
@@ -69,16 +76,16 @@
         }
         
         .header-left {
-            width: auto;
+            width: 20%;
             text-align: left;
         }
         
         .header-mid {
-            width: 80%;
+            width: 60%;
         }
         
         .header-right {
-            width: auto;
+            width: 20%;
             text-align: right;
         }
         
@@ -123,6 +130,67 @@
         
         .spotlight {
             height: 750px;
+        }
+        
+        .spotlight .text-block {
+            
+        }
+        
+        .spotlight-header-wrapper {
+            width: 50%;
+            margin: auto;
+            position: absolute;
+            bottom: 31%;
+            left: 25%;
+        }
+        
+        .spotlight h1 {
+            text-align: center;
+            color: white;
+            font-size: 70px;
+            bottom: 40%;
+            left: 35%;
+            margin-bottom: 20px;
+        }
+        
+        .spotlight p {
+            color: white;
+            text-align: center;
+            font-size: 17px;
+            font-family: 'Open+sans', sans-serif;
+        }
+        
+        .spotlight hr {
+            width: 40%;
+            margin-bottom: 30px;
+        }
+        
+        .spotlight-header-wrapper button {
+            background: none;
+            color: white;
+            border: white 2px solid;
+            text-align: center;
+            width: 150px;
+            margin: auto;
+            padding:10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-top: 20px;
+            font-size: 15px;
+            text-transform: uppercase;
+            font-family: 'Do Hyeon', sans-serif;
+            cursor: pointer;
+        }
+        
+        .spotlight-header-wrapper button:hover {
+            border-radius: 15px;
+            transition: 0.3s ease;
+        }
+        
+        .spotlight-button {
+            width: 100%;
+            display: flex;
+            justify-content: center;
         }
         
         .left-arrow, .right-arrow {
@@ -178,11 +246,12 @@
             <!-- Header -->
             <div class="header">
                 <div class="header-left">
+                    
                     <img class="header-icon" src="assets/menu.svg">
                     <img class="header-icon" src="assets/location.svg">
                 </div>
                 <div class="header-mid">
-                    <h1>PYONEER</h1>
+                    <h1>REDSTONE</h1>
                 </div>
                 <div class="header-right">
                     <img class="header-icon" src="assets/mail.svg">
@@ -203,11 +272,19 @@
                 </div>
             </div>
 
+            <!-- Spotlight -->
             <div class="spotlight">
                 <button class="left-arrow">&#8826</button>
                 <button class="right-arrow">&#8827</button>
                 <div class="text-block">
-                
+                    <div class="spotlight-header-wrapper">
+                        <h1>The Most Epic <br> Scenery in the World</h1>
+                        <hr>
+                        <p>Slideshow of Redstone national park, take in its stunning surroundings.</p>
+                        <div class="spotlight-button">
+                            <button>Read Article ></button>
+                        </div>
+                    </div>
                 </div>
             </div>
             
