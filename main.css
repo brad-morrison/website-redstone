@@ -6,12 +6,11 @@
         margin: 0;
         width: 100%;
         background-color: #1d1d1d;
-
+        
     }
 
     .main {
         width: 100%;
-
     }
 
     .main-inner {
@@ -28,6 +27,7 @@
         width: 100%;
         margin: auto;
         position: relative;
+        overflow: hidden;
 
     }
 
