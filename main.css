@@ -13,6 +13,10 @@
         width: 100%;
     }
 
+    .main-inner-wrapper {
+        width: 100%;
+    }
+
     .main-inner {
         width: 75%;
         margin: auto;
