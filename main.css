@@ -22,8 +22,8 @@
         margin: auto;
         padding-left: 30px;
         padding-right: 30px;
-        max-width: 1500px;
-        min-width: 1300px;
+        max-width: 1700px;
+        min-width: 840px;
     }
 
     .top-block {
@@ -259,9 +259,6 @@
         transition: 0.3s ease;
     }
 
-    @media 
-
-
     /*---------------------------------------------------------------------*/
 
 
@@ -444,9 +441,13 @@
 
 /* ================================================================================================================================ */
 
-@media only screen and (max-width: 1500px)
+@media only screen and (max-width: 1585px)
 {
+    .main-inner {
+        
+    }
+    
     .second-block {
-        display: none;
+        
     }
 }
