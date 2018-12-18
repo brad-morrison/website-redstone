@@ -3,7 +3,7 @@
     }
 
     body {
-        margin: auto;
+        margin: 0;
         width: 100%;
         background-color: #1d1d1d;
 
@@ -27,7 +27,6 @@
         max-width: 1800px;
         width: 100%;
         margin: auto;
-        overflow: hidden;
         position: relative;
 
     }
