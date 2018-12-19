@@ -414,6 +414,8 @@
     width: 100%;
     justify-content: center;
     color: white;
+    margin-bottom: 30px;
+    margin-top: 40px;
 }
 
 .divider-title hr {
@@ -435,9 +437,75 @@
     letter-spacing: 3px;
 }
 
+/* -------------------------------------------------------------*/
 
+.events-wrapper {
+    width: 80%;
+    margin: auto;
+}
 
+.event-tile {
+    width: 100%;
+    height: 200px;
+    background-color: #f5f5f5;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+}
 
+.tile-content {
+    width: 40%;
+    padding: 20px 30px;
+}
+
+.tile-content h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: 44px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+.tile-content p {
+    color: #a3a3a3;
+    font-size: 25px;
+    font-family: 'Do Hyeon', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.tile-gradient {
+    background-image: linear-gradient(to right, rgba(245,245,245,1), rgba(255,255,255,0));
+    position: absolute;
+    top:0;
+    width: 20%;
+    height: 100%;
+    z-index: 33;
+}
+
+.tile-image {
+    position: relative;
+}
+
+.tile-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 80px;
+    top: 43%;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: 'Do Hyeon', sans-serif;
+    cursor: pointer;
+    background: none;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 8px;
+    border: white 2px solid;
+    background-color: rgba(0,0,0,0.4);
+}
 
 /* ================================================================================================================================ */
 
