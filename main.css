@@ -235,6 +235,7 @@
         width: 100%;
         position: absolute;
         justify-content: center;
+        display: flex;
         bottom: 4%;
         text-align: center;
 
@@ -243,10 +244,24 @@
     .image-button {
         font-size: 90px;
         color: rgba(255,255,255,0.3);
-        background: none;
-        border: none;
-        padding-left: 8px;
-        padding-right: 8px;
+        background: grey;
+        width: 30px;
+        margin-left: 12px;
+        margin-right: 12px;
+        transition: 0.5s ease;
+        cursor: pointer;
+        height: 10px;
+        z-index: 10;
+
+    }
+
+    .image-button-on {
+        font-size: 90px;
+        color: rgba(255,255,255,0.3);
+        background: white;
+        width: 40px;
+        margin-left: 8px;
+        margin-right: 8px;
         transition: 0.5s ease;
         cursor: pointer;
         height: 10px;
@@ -255,7 +270,7 @@
     }
 
     .image-button:hover {
-        color: white;
+        background-color: white;
         transition: 0.3s ease;
     }
 

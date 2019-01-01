@@ -15,6 +15,9 @@ function changeSlide(n)
 {
     var i;
     var slides = document.getElementsByClassName("spotlight-image");
+    var dots = document.getElementsByClassName("dot");
+    
+    slideIndex = n;
     
     // set to 1 if over amount of images
     if (n > slides.length)
@@ -32,10 +35,19 @@ function changeSlide(n)
     for (i = 0; i < slides.length; i++)
     {
         slides[i].style.display = "none";
-        console.log("set all to hidden");
     }
     
+    // change display to block
     slides[slideIndex-1].style.display = "block";
-    console.log(slideIndex);
+    
+    
+    // set all dots to blank
+    for (i=0; i < dots.length; i++)
+    {
+        dots[i].className = dots[i].className.replace(" image-button-on", "");
+    }
+    
+    // set correct button to on
+    dots[slideIndex-1].className += " image-button-on";
     
 }
