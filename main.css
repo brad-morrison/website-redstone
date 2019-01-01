@@ -241,14 +241,14 @@
 
     }
 
-    .image-button {
+    .dot {
         font-size: 90px;
         color: rgba(255,255,255,0.3);
         background: grey;
         width: 22px;
         margin-left: 12px;
         margin-right: 12px;
-        transition: 0.5s ease;
+        transition: 0.3s ease;
         cursor: pointer;
         height: 10px;
         z-index: 10;
@@ -260,7 +260,7 @@
         font-size: 90px;
         color: rgba(255,255,255,0.3);
         background: white;
-        width: 40px;
+        width: 30px;
         margin-left: 8px;
         margin-right: 8px;
         transition: 0.5s ease;
@@ -270,7 +270,7 @@
 
     }
 
-    .image-button:hover {
+    .dot:hover {
         background-color: white;
         transition: 0.3s ease;
     }

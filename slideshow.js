@@ -1,5 +1,7 @@
 var slideIndex = 1;
+console.log("running in script");
 changeSlide(slideIndex);
+
 
 function slideChange_Arrow(n)
 {
@@ -37,17 +39,16 @@ function changeSlide(n)
         slides[i].style.display = "none";
     }
     
-    // change display to block
-    slides[slideIndex-1].style.display = "block";
-    
-    
     // set all dots to blank
     for (i=0; i < dots.length; i++)
     {
         dots[i].className = dots[i].className.replace(" image-button-on", "");
     }
     
-    // set correct button to on
+    // change display to block
+    slides[slideIndex-1].style.display = "block";
+    
+    // set correct dot to on
     dots[slideIndex-1].className += " image-button-on";
     
 }
